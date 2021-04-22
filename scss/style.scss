@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html{
+  font-size: 62.5%;
+  background-color: #FFF3FE;
+}
+
+h1{
+  font-size: 3rem;
+  display: block;
+  text-align: center;
+  padding-top: 2.4rem;
+}
+
+#message{
+  font-size: 1.8rem;
+  display: block;
+  text-align: center;
+  padding-top: 1.6rem;
+}
+
+.button{
+  &__uranau{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    input{
+      margin: 2.4rem 1.6rem;
+      padding: 5.5rem 1.6rem;
+      font-size: 1.6rem;
+      background-color: transparent;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px;
+      transition: all .5s;
+      border: solid .1rem #d0ccff;
+      border-radius: .2rem;
+      cursor: pointer;
+      &:hover{
+        background-color: #d0ccff;
+      }
+    }
+  }
+  &__reload{
+    text-align: center;
+    button{
+      background-color: transparent;
+      border: solid .2rem #d0ccff;
+      border-radius: 5rem;
+      margin-top: 1.6rem;
+      padding: .7rem 2rem;
+      font-size: 1.8rem;
+      transition: all .3s;
+      &:hover{
+        background-color: #d0ccff;
+        border: solid .2rem #d0ccff;
+      }
+    }
+  }
+}
+

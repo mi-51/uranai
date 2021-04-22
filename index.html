@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./scss/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1>占い</h1>
+  <p id="message">カードを選んで占ってね！<br></p>
+
+  <div class="button__uranau">
+    <input type="button" value="これを選ぶ" onclick="uranai('大吉');">
+    <input type="button" value="これを選ぶ" onclick="uranai('小吉');">
+    <input type="button" value="これを選ぶ" onclick="uranai('中吉');">
+    <input type="button" value="これを選ぶ" onclick="uranai('凶');">
+    <input type="button" value="これを選ぶ" onclick="uranai('小吉');">
+    <input type="button" value="これを選ぶ" onclick="uranai('中吉');">
+    <input type="button" value="これを選ぶ" onclick="uranai('大吉');">
+    <input type="button" value="これを選ぶ" onclick="uranai('凶');">
+  </div>
+    
+  <div class="button__reload">
+    <button type="button" id="reload" onclick="reload();">もう1回占う</button>   
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
