@@ -18,7 +18,7 @@ h1 {
   padding-top: 2.4rem;
 }
 
-#message {
+#message, #message_result {
   font-size: 1.8rem;
   display: block;
   text-align: center;
@@ -48,6 +48,12 @@ h1 {
   border: solid .1rem #d0ccff;
   border-radius: .2rem;
   cursor: pointer;
+}
+
+@media (max-width: 1220px) {
+  .button__uranau input {
+    margin: 2.4rem 4em;
+  }
 }
 
 .button__uranau input:hover {

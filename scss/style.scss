@@ -1,5 +1,13 @@
 @charset "utf-8";
 
+$tab: 1220px;
+@mixin tab {
+  @media (max-width:($tab)) {
+    @content;
+  };
+}
+
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -19,7 +27,7 @@ h1{
   padding-top: 2.4rem;
 }
 
-#message{
+#message,#message_result{
   font-size: 1.8rem;
   display: block;
   text-align: center;
@@ -41,6 +49,9 @@ h1{
       border: solid .1rem #d0ccff;
       border-radius: .2rem;
       cursor: pointer;
+      @include tab{
+        margin: 2.4rem 4em;
+      }
       &:hover{
         background-color: #d0ccff;
       }
